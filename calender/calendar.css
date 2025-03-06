@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #d5006d; /* Dark pink color */
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.day {
+    padding: 10px;
+    background-color: #ffe6f2; /* Light pink background for days */
+    border: 1px solid #d5006d; /* Dark pink border */
+    text-align: center;
+    border-radius: 4px;
+}
+
+.prediction {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
