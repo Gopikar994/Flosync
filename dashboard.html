@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PeriodTracker</div>
+            <ul class="nav-links">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome Back, User!</h1>
+            <p>Here's your cycle overview and health insights.</p>
+        </section>
+
+        <section class="dashboard-content">
+            <!-- Calendar View -->
+            <div class="calendar">
+                <h2>Cycle Calendar</h2>
+                <div class="calendar-grid">
+                    <!-- Dynamically Generated Calendar Days -->
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <!-- Add more days here -->
+                </div>
+            </div>
+
+            <!-- Cycle Overview -->
+            <div class="cycle-overview">
+                <h2>Cycle Overview</h2>
+                <p><strong>Average Cycle Length:</strong> 28 days</p>
+                <p><strong>Current Cycle:</strong> Day 10 of 28</p>
+                <p><strong>Period Start Date:</strong> March 1st</p>
+                <p><strong>Next Period Prediction:</strong> March 29th</p>
+            </div>
+
+            <!-- Health Insights -->
+            <div class="health-insights">
+                <h2>Health Insights</h2>
+                <ul>
+                    <li><strong>Average Mood:</strong> Neutral</li>
+                    <li><strong>Symptoms Last Cycle:</strong> Mild Cramps</li>
+                    <li><strong>Energy Level:</strong> Moderate</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PeriodTracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
