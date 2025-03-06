@@ -1,0 +1,155 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #f1c6d6;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5f2a7f;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5f2a7f;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #9e3d8a;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8d7f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #5f2a7f;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Calendar */
+.calendar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.calendar h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5f2a7f;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.calendar-day {
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.calendar-day:hover {
+    background-color: #5f2a7f;
+    color: white;
+}
+
+/* Cycle Overview */
+.cycle-overview {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.cycle-overview h2 {
+    color: #5f2a7f;
+    font-size: 1.5rem;
+}
+
+.cycle-overview p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Health Insights */
+.health-insights {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.health-insights h2 {
+    color: #5f2a7f;
+    font-size: 1.5rem;
+}
+
+.health-insights ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.health-insights li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1c6d6;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
