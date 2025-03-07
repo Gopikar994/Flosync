@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f06292, #ec407a); /* Pink Gradient Background */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Soft blur effect for the container */
+}
+
+h2, h3 {
+    color: #ec407a; /* Pink color for headings */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #ec407a; /* Pink label color */
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="date"], input[type="number"], input[type="range"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid #ec407a;
+    border-radius: 8px;
+    background-color: #fce4ec; /* Light pink background for inputs */
+    color: #ec407a; /* Pink text in the input */
+    transition: 0.3s ease;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ec407a;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Mood Tracker */
+#mood {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 36px; /* Default size for the emojis */
+    margin-top: 20px;
+}
+
+#mood i {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Color and Size for Happy Mood */
+#mood .fa-smile {
+    color: #ffeb3b; /* Yellow for happy */
+    font-size: 64px; /* Bigger emoji */
+}
+
+#mood .fa-smile:hover {
+    color: #fbc02d; /* Darker yellow on hover */
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+/* Color and Size for Neutral Mood */
+#mood .fa-meh {
+    color: #a8a80b; /* Gray for neutral */
+    font-size: 64px; /* Bigger emoji */
+}
+
+#mood .fa-meh:hover {
+    color: #987911; /* Darker gray on hover */
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+/* Color and Size for Sad Mood */
+#mood .fa-sad-tear {
+    color: #e1de42; /* Light red for sad */
+    font-size: 64px; /* Bigger emoji */
+}
+
+#mood .fa-sad-tear:hover {
+    color: #caa213; /* Darker red on hover */
+    transform: scale(1.2); /* Slightly larger on hover */
+}
+
+.symptom-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.symptom-option {
+    width: 45%;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    color: #ec407a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.symptom-option:hover {
+    background-color: #fce4ec; /* Light pink on hover */
+    transform: scale(1.05);
+}
+
+.symptom-option i {
+    font-size: 36px;
+    color: #ec407a;
+    margin-bottom: 10px;
+}
+
+.symptom-option p {
+    font-size: 0.9rem;
+    color: #ec407a;
+    margin-top: 10px;
+}
+
+.history-log {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fce4ec;
+    border-radius: 10px;
+}
+
+.history-log ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-log li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.history-log li span {
+    color: #ec407a;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    background-color: #f8bbd0;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 50%; /* You can dynamically update this width using JavaScript */
+    background-color: #ec407a;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+}
