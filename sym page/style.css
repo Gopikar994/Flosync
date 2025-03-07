@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8bbd0; /* Light Pink Background Color */
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22100%22%20height%3D%22100%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2210%22%20fill%3D%22%23f44336%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2225%22%20r%3D%224%22%20fill%3D%22%23e57373%22/%3E%3C/svg%3E'); /* Custom Blood Drop SVG Pattern */
+    background-size: 100px 100px; /* Adjust the size of the pattern */
+    background-repeat: repeat; /* Repeat the SVG pattern */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+input[type="date"], input[type="number"], input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="range"] {
+    width: 80%;
+}
+
+#severity-value {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ec407a; /* Pink color for buttons */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+.symptom-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.symptom-option {
+    width: 45%;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.symptom-option:hover {
+    background-color: #e0e0e0;
+}
+
+.symptom-option i {
+    font-size: 36px;
+    color: #333;
+}
+
+.symptom-option p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#severity-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#feedback {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#clear-log, #save-log {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    margin-right: 4%;
+}
+
+#clear-log:hover, #save-log:hover {
+    background-color: #ff5722;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#feedback.success {
+    background-color: #c8e6c9;
+    color: #388e3c;
+}
+
+#feedback.error {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+#save-log {
+    background-color: #2196f3;
+}
+
+#save-log:hover {
+    background-color: #1976d2;
+}
+
+#clear-log {
+    background-color: #f44336;
+}
+
+#clear-log:hover {
+    background-color: #e53935;
+}
+
+/* Mood Tracker */
+#mood {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#mood i {
+    transition: transform 0.3s ease;
+}
+
+#mood i:hover {
+    transform: scale(1.2);
+}
