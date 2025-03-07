@@ -15,8 +15,10 @@
                 <label for="date">Date:</label>
                 <input type="date" id="date" required>
             </div>
+            
+            <!-- Symptom Selection -->
             <div class="input-group">
-                <label for="symptoms">Select Symptoms:</label>
+                <label>Select Symptoms:</label>
                 <div id="symptoms" class="symptom-options">
                     <div class="symptom-option" data-symptom="cramps">
                         <i class="fas fa-pills"></i>
@@ -40,17 +42,41 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Symptom Duration -->
+            <div class="input-group">
+                <label for="duration">Duration (in hours):</label>
+                <input type="number" id="duration" min="0" max="48" placeholder="How long (hours)">
+            </div>
+            
+            <!-- Mood Tracker -->
+            <div class="input-group">
+                <label for="mood">Mood:</label>
+                <div id="mood">
+                    <i class="fas fa-sad-tear" data-mood="sad"></i>
+                    <i class="fas fa-meh-blank" data-mood="neutral"></i>
+                    <i class="fas fa-smile" data-mood="happy"></i>
+                </div>
+            </div>
+
+            <!-- Severity Slider -->
             <div class="input-group">
                 <label for="severity">Severity:</label>
                 <input type="range" id="severity" min="1" max="5" value="1" />
                 <span id="severity-value">1</span>
             </div>
+
             <button type="submit">Track Symptoms</button>
         </form>
 
         <h3>Logged Symptoms</h3>
         <div id="symptom-log"></div>
         <div id="feedback" class="hidden"></div>
+
+        <div class="buttons">
+            <button id="clear-log">Clear Log</button>
+            <button id="save-log">Save Log</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
