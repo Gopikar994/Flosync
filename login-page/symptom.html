@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Symptom Tracker</h2>
+        <form id="symptom-form">
+            <div class="input-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            
+            <!-- Symptom Selection -->
+            <div class="input-group">
+                <label>Select Symptoms:</label>
+                <div id="symptoms" class="symptom-options">
+                    <div class="symptom-option" data-symptom="cramps">
+                        <i class="fas fa-pills"></i>
+                        <p>Cramps</p>
+                    </div>
+                    <div class="symptom-option" data-symptom="headache">
+                        <i class="fas fa-head-side-cough"></i>
+                        <p>Headache</p>
+                    </div>
+                    <div class="symptom-option" data-symptom="fatigue">
+                        <i class="fas fa-bed"></i>
+                        <p>Fatigue</p>
+                    </div>
+                    <div class="symptom-option" data-symptom="mood">
+                        <i class="fas fa-smile-beam"></i>
+                        <p>Mood Swings</p>
+                    </div>
+                    <div class="symptom-option" data-symptom="nausea">
+                        <i class="fas fa-heartbeat"></i>
+                        <p>Nausea</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Symptom Duration -->
+            <div class="input-group">
+                <label for="duration">Duration (in hours):</label>
+                <input type="number" id="duration" min="0" max="48" placeholder="How long (hours)">
+            </div>
+            
+            <!-- Mood Tracker -->
+            <div class="input-group">
+                <label for="mood">Mood:</label>
+                <div id="mood">
+                    <i class="fas fa-sad-tear" data-mood="sad"></i>
+                    <i class="fas fa-meh-blank" data-mood="neutral"></i>
+                    <i class="fas fa-smile" data-mood="happy"></i>
+                </div>
+            </div>
+
+            <!-- Severity Slider -->
+            <div class="input-group">
+                <label for="severity">Severity:</label>
+                <input type="range" id="severity" min="1" max="5" value="1" />
+                <span id="severity-value">1</span>
+            </div>
+
+            <button type="submit">Track Symptoms</button>
+        </form>
+
+        <h3>Logged Symptoms</h3>
+        <div id="symptom-log"></div>
+        <div id="feedback" class="hidden"></div>
+
+        <div class="buttons">
+            <button id="clear-log">Clear Log</button>
+            <button id="save-log">Save Log</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
